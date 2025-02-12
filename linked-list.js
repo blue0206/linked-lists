@@ -9,6 +9,7 @@ export class LinkedList {
         if (this.head == null) {
             this.head = new Node(value);
             this.tail = this.head;
+            this.size++;
             return;
         }
         const newNode = new Node(value);
@@ -21,6 +22,7 @@ export class LinkedList {
         if (this.head == null) {
             this.head = new Node(value);
             this.tail = this.head;
+            this.size++;
             return;
         }
         const newNode = new Node(value, this.head);
